@@ -1,0 +1,27 @@
+<script>
+  // membuat array 1 dimensi
+  let buah = ['mangga', 'pepaya', 'jambu', 'apel'];
+  //mengganti index
+  buah[2] = 'jeruk';
+
+  for (let i = 0; i < buah.length; i++) {
+    document.write('<br>' + buah[i]);
+  }
+</script>
+<script>
+  //array di dalam array
+  let p1 = { nama: 'joril', alamat: 'kertasri', umur: 21 };
+  let p2 = { nama: 'jo', alamat: 'kerta', umur: 22 };
+  let p3 = { nama: 'jorilis', alamat: 'kertasriru', umur: 23 };
+  //menamplkan objeck
+  let bio = [p1, p2, p3];
+  for (let i = 0; i < bio.length; i++) {
+    document.write('<br>' + bio[i]);
+  }
+  //menampilkan data
+  for (p of bio) {
+    document.write('<br>' + p.nama);
+    document.write('<br>' + p.alamat);
+    document.write('<br>' + p.umur);
+  }
+</script>
